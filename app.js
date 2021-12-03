@@ -54,7 +54,6 @@ app.use(function (err, req, res, next) {
  */
 
 // Ligar á B.D.: 'test'->user da BD, ´nnn´->pass
-//mongoose.connect('mongodb+srv://afett:admin@cluster0.gurgx.mongodb.net/testman?retryWrites=true&w=majority');
 mongoose.connect(process.env.DB_URL);
 
 // Confirma ligação na consola
